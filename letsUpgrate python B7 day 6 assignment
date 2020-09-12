@@ -1,0 +1,24 @@
+class bankaccount():
+    def __init__(self,name,balance):
+        self.name=name
+        self.balance=balance
+    def deposit (self,amount):
+        self.balance+=amount
+        print("available balance:",self.balance)
+    def withdrawl(self,required):
+        if (self.balance>required):
+            print("available balance",self.balance-required)
+        else:
+            print("money overdrawn")
+c=bankaccount("rajiv",10000)
+c.deposit(5000)
+c.withdrawl(4000)
+
+
+
+Output:
+After deposit:
+available balance: 15000
+After withdrawal:
+available balance 11000
+> 
